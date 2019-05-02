@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFCommonLayouts.BasicForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCommonLayouts"
+        mc:Ignorable="d"
+        Title="BasicForm" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Text="Create Something" FontSize="28" Margin="2,5,2,20" />
+        <Label Grid.Row="1" Grid.Column="0" Content="Name:" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SomethingName}" />
+        <Button Content="OK" Command="{Binding CloseDialogCommand}" CommandParameter="True" Grid.Row="2" Grid.Column="1" Height="25" Width="100" HorizontalAlignment="Right" Margin="5,55,130,5"/>
+        <Button Content="Cancel" Command="{Binding CloseDialogCommand}" CommandParameter="False" IsDefault="True" Grid.Row="2" Grid.Column="1" Height="25" Width="100" HorizontalAlignment="Right" Margin="5,55,10,5" />
+    </Grid>
+</Window>

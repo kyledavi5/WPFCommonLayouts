@@ -1,0 +1,52 @@
+﻿<Window x:Class="WPFCommonLayouts.RecordDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCommonLayouts"
+        mc:Ignorable="d"
+        Title="RecordDetailWindow" Height="516.009" Width="682.176">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="233*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="26*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Field 1:" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="50" Grid.Column="1" Margin="9,0,0,0"/>
+        <Label Content="Field 2:" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="26" Width="50" Grid.Column="1" Margin="9,2.5,0,0"/>
+        <Label Content="Field 3:" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="52" Margin="2,0,0,0"/>
+        <Label Content="Field 4:" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="26" Width="52" Margin="2,2.5,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="16,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="38" Width="444" Grid.ColumnSpan="8" FontSize="24"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="0,8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Field 1 Data" VerticalAlignment="Top" Height="16" Width="80"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="2,6.5,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Field 2 Data" VerticalAlignment="Top" Height="22" Width="78"/>
+        <TextBlock Grid.Column="5" HorizontalAlignment="Left" Margin="9,5,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Field 3 Data" VerticalAlignment="Top" Height="19" Width="64"/>
+        <TextBlock Grid.Column="5" HorizontalAlignment="Left" Margin="9,6.5,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Field 4 Data" VerticalAlignment="Top" Height="16" Width="64"/>
+        <Button Content="Button" Grid.Column="7" HorizontalAlignment="Left" Margin="10,10.5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="76" Height="20"/>
+        <Button Content="Button" Grid.Column="8" HorizontalAlignment="Left" Margin="15,10.5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="74" Height="20"/>
+        <TabControl Grid.ColumnSpan="8" Grid.Column="1" HorizontalAlignment="Left" Height="203" Margin="11,41.5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="596">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
